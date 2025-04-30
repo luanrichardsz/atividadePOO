@@ -27,7 +27,6 @@ public class Exercicio37 {
 
             System.out.print(" \nDigite a opção que você deseja: ");
             opc = sc.nextInt();
-            sc.nextLine(); // Limpar o buffer do scanner após o nextInt()
 
             switch (opc) {
                 case 1:
@@ -41,7 +40,6 @@ public class Exercicio37 {
                     resultado = number1 + number2;
 
                     System.out.println("\nResultado: " + number1 + " + " + number2 + " = " + resultado);
-                    continuar = sc.nextLine().toUpperCase();
                     break;
                 case 2:
                     // Subtração
@@ -54,7 +52,6 @@ public class Exercicio37 {
                     resultado = number1 - number2;
 
                     System.out.println("\nResultado: " + number1 + " - " + number2 + " = " + resultado);
-                    continuar = sc.nextLine().toUpperCase();
                     break;
                 case 3:
                     // Multiplicação
@@ -67,7 +64,6 @@ public class Exercicio37 {
                     resultado = number1 * number2;
 
                     System.out.println("\nResultado: " + number1 + " * " + number2 + " = " + resultado);
-                    continuar = sc.nextLine().toUpperCase();
                     break;
                 case 4:
                     // Divisão
@@ -83,7 +79,6 @@ public class Exercicio37 {
                     } else {
                         System.out.println("\nERROR: DIVISÃO POR ZERO! Tente novamente.");
                     }
-                    continuar = sc.nextLine().toUpperCase();
                     break;
                 default:
                     // Opção inválida
@@ -91,7 +86,7 @@ public class Exercicio37 {
             }
 
             System.out.print("\nDeseja voltar ao menu principal? (S para SIM, qualquer outra letra para NÃO): ");
-            continuar = sc.nextLine().toUpperCase();
+            continuar = sc.next().toUpperCase().trim();
 
         } while (continuar.equalsIgnoreCase("S"));
 

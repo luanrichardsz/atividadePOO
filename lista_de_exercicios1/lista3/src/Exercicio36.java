@@ -7,7 +7,7 @@ public class Exercicio36 {
         - Encontre o maior valor
         - Encontre o menor valor
         - Calcule a média dos números lidos
-         */
+          */
 
         Scanner sc = new Scanner(System.in);
 
